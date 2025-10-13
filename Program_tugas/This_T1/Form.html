@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Mahasiswa</title>
+    <style>
+        fieldset {
+            width: 80%;
+            margin: 10px auto;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        
+        legend {
+            font-weight: bold;
+        }
+        
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        
+        textarea {
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align:center;">Form Mahasiswa</h2>
+
+    <form>
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <label>Nama :</label> <input type="text" name="nama"><br><br>
+            <label>NPM :</label> <input type="text" name="npm"><br><br>
+            <label>Kelas :</label>
+            <select name="kelas">
+                <option>IF-A</option>
+                <option>IF-B</option>
+                <option>IF-C</option>
+            </select><br><br>
+            <label>Kelas :</label>
+            <select name="umur">
+                <option>Kurang dari 18</option>
+                <option>Lebih dari 18</option>
+				<option>Sekarang berusia 18</option>
+            </select><br><br>
+            <label>Jenis Kelamin :</label>
+            <input type="radio" name="jk" value="pria"> Man
+            <input type="radio" name="jk" value="wanita"> Woman
+            </select><br><br>
+            <label>Golongan Darah :</label>
+            <input type="radio" name="jk" value="gol"> AB
+            <input type="radio" name="jk" value="gol"> A
+            <input type="radio" name="jk" value="gol"> B
+            <input type="radio" name="jk" value="gol"> O
+            <p> </p>
+            <label>Kondisi Kesehatan :</label> <textarea name="KK"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tempat Tinggal Mahasiswa</legend>
+            <label>Alamat :</label> <textarea name="alamat"></textarea><br><br>
+            <label>Asal Negara :</label> <input type="text" name="negara"><br><br>
+            <label>Kecamatan :</label> <input type="text" name="kecamatan"><br><br>
+            <label>Kabupaten/Kotamadya :</label> <input type="text" name="kabupaten"><br><br>
+            <label>Provinsi :</label> <input type="text" name="provinsi"><br><br>
+            <label>Kode Pos :</label> <input type="text" name="kodepos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Lain-lainnya</legend>
+            <label>Bahasa Pemrograman :</label><br>
+            <input type="checkbox" name="bahasa" value="C/C++"> C/C++
+            <input type="checkbox" name="bahasa" value="Go"> Go Lang
+            <input type="checkbox" name="bahasa" value="Java"> Java
+            <input type="checkbox" name="bahasa" value="Python"> Python
+            <input type="checkbox" name="bahasa" value="PHP"> PHP
+            <input type="checkbox" name="bahasa" value="Javascript"> Javascript
+            <input type="checkbox" name="bahasa" value="Ruby"> Ruby
+            <input type="checkbox" name="bahasa" value="Brainfuck"> Brainfuck
+            <input type="checkbox" name="bahasa" value="Whitespace"> Whitespace
+            <p> </p>
+            <input type="checkbox" name="bahasa" value="Haskell"> Haskell
+            <input type="checkbox" name="bahasa" value="Lainnya"> Lainnya
+            <br><br>
+            <label>Kegiatan :</label><br>
+            <input type="checkbox" name="kegiatan" value="kemahasiswaan"> Organisasi Kemahasiswaan
+            <input type="checkbox" name="kegiatan" value="olahraga"> Bidang Olahraga
+            <input type="checkbox" name="kegiatan" value="luar"> Organisasi di Luar Kampus
+            <input type="checkbox" name="kegiatan" value="seni"> Bidang Seni, atau Kesenian
+            <p> </p>
+            <input type="checkbox" name="kegiatan" value="berdagang"> Bidang Perdagangan, atau Berdagang
+            <input type="checkbox" name="kegiatan" value="berdagang"> Traveling, atau Jalan-jalan
+            <input type="checkbox" name="kegiatan" value="berdagang"> Memancing
+            <input type="checkbox" name="kegiatan" value="lainnya"> Lainnya
+        </fieldset>
+
+        <div style="text-align:center; margin-top:10px;">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
