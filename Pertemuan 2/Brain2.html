@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Latihan CSS</title>
+<style>
+	.box{
+	display: blok;
+	background: orange;
+	width: 250px;
+	height: 250px;
+	margin: 50px;
+	animation-name: inianimasi;
+	animation-duration: 5;
+	animation-iteration-count: infinite;
+	animation: geserKanan 3s infinite alternate;
+	}
+	p{
+	padding.top: 5px;
+	padding.left: 10px;
+	text-shadow: 2px 2px 4px white;
+	}
+	@keyframes inianimasi{
+	from {background-color: orange;}
+	to {background-color: yelow;}
+	}
+	@keyframes geserKanan{
+	from {left: 0;}
+	to {left: 200px}
+	}
+</style>
+
+</head>
+<body>
+	<div class="box">
+	<p>aku didalam box</p>
+	</div>
+</body>
+</html>
