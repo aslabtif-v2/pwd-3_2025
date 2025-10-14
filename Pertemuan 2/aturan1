@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Latihan CSS</title>
+<style>
+	p{
+	color: blue;
+	}
+	.kekanan{
+	text-align: right;
+	}
+	#tengah{
+	text-align: center;
+	}
+	a:hover{
+	color: pink;
+	}
+	a:visited{
+	color: red;
+	}
+	a:active{
+	color: black;
+	}
+</style>
+
+</head>
+<body>
+	<p style="font-family:arial"><b>Halo deck</b></p>
+	<p style="color: red">Ini Warna Merah 🦑</p>
+	<h1>halooo!</h1>
+	<p class="kekanan">aku dikanan</p>
+	<p id="tengah" class="kekanan">aku ditengah</p>
+	<a href="#">ini sebuah link</a>
+</body>
+</html>
