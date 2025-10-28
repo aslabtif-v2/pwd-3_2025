@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+    <button id="test"> GET DATA AJAK</button>
+    <script>
+        $(document).ready(function(){
+            $(document).on('click', '#test',function(e){
+                $.ajax({
+                    url : 'get.php',
+                    method : 'GET',
+                    success : function(data){
+                        //taampilkan hasil get di console
+                        console.log(data);
+                    }
+                })
+        });
+    });
+    </script>
+</body>
+</html>
